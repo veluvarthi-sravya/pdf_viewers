@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📄 PDF Viewer</h1>
+    <button id="download">⬇️ Download</button>
+  </header>
+
+  <main>
+    <canvas id="pdf-render"></canvas>
+  </main>
+
+  <footer>
+    <button id="prev">⬅️ Prev</button>
+    <span>Page <span id="page-num"></span> / <span id="page-count"></span></span>
+    <button id="next">➡️ Next</button>
+    <button id="zoom-in">🔍 Zoom In</button>
+    <button id="zoom-out">🔎 Zoom Out</button>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
